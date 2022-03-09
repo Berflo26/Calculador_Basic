@@ -7,16 +7,26 @@
   font-weight: 100%;
 }
 body{
-    display: flex;
+    display:grid;
+    flex-wrap:wrap;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #2C8A94;
     cursor: pointer;
 }
+h1{
+    color: #FFFFFF;
+    text-align: center;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
 .calculator{
     position: relative;
     display: grid;
+    
 }
 .calculator .value{
     grid-column: span 4;
@@ -36,9 +46,10 @@ body{
     place-items: center;
     border: 1px solid rgba(0,0,0 .1);
 }
-.calculator span:active{
+.calculator span:active{ 
     background: #59ABA0;
     color: #111;
+    
 }
 .calculator span.clear{
     grid-column: span 2;
@@ -47,7 +58,7 @@ body{
 }
 .calculator span.plus{
     grid-row: span 2;
-   height: 120px;
+    height: 120px;
 }
 .calculator span.equal{
    background: #59ABA0;

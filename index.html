@@ -14,6 +14,8 @@
   </head>
   <body>
     <main>
+     <section class="container">
+      <h1><img src="https://img.icons8.com/color/48/000000/calculate.png"/> Calculadora Basica</h1><br>
       <form action="/" class="calculator" name="calc">
         <input class="value" type="text" name="txt" readonly=""/>
         <span class="num clear" onclick="document.calc.txt.value = ''">C</span>
@@ -35,6 +37,7 @@
         <span class="num" onclick="document.calc.txt.value += '.'">.</span>
         <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
       </form>
+     </section>
     </main>
   </body>
 </html>
